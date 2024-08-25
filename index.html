@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+    </header>    
+    <main>
+        <section>
+            <img class="logo" src="./assets/Logo_blanco.png" alt="Logo de Alura">
+            <h1 class="presentacion_titulo">Encriptador de Texto</h1>
+            <p class="descripcion">BIENVENIDO/A AL CHALLENGE 1 - ALURA ONE</p>
+            <textarea class="input" rows="10" cols="50" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones_1">
+                <button class="btn_encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn_desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section> 
+            <textarea class="output" rows="10" cols="50" id="output" readonly></textarea>
+            <div class="boton_copy">
+                <button class="btn_copy" onclick="copyText()">Copiar</button>
+            </div>
+        </section>
+    </main>
+   
+    <footer>
+        <div class="Presentacion_enlaces">
+            <p class="footer_txt">Desarrollado por Paúl Montes (2024)</p>
+            <h2 class="footer_txt2">Accede a mis redes:</h2>
+            <div class="enlaces">
+                <a href="https://www.linkedin.com/in/montessx/">
+                    <img class="linkedin_logo" src="/assets/linkedinlogo.png" alt="Logo de LinkedIn"></a>
+                <a href="https://github.com/MontesX">
+                    <img class="github_logo" src="/assets/githublogo.png" alt="Logo de GitHub"></a>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

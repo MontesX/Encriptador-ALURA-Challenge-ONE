@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+@font-face{
+    font-family: 'primerFuente';
+    src:url(./assets/crescendo.ttf);
+}
+
+@font-face{
+    font-family: 'segundaFuente';
+    src:url(./assets/champagne-and-limusine-bold.ttf);
+}
+
+/*Variables*/
+:root{
+    --fuente_primaria: 'primerFuente';
+    --fuente_secundaria: 'segundaFuente';
+    --fuente_contenido: "Teachers", sans-serif;
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+    position: 0;
+    font-family: var(--fuente_secundaria);
+}
+
+.logo{
+   margin-top: 2.5rem;
+   margin-left: 0rem;
+   margin-bottom: 2.5rem; 
+}
+
+body{
+    background-image: url(./assets/fondo_2.png);
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100vh;
+
+}
+
+
+main{
+    display: flex;
+    align-items:last baseline;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.input{
+    resize: none;
+    width: 60rem;
+    height: 34rem;
+    margin-left: 2.5rem;
+    margin-bottom: 0rem;
+    font-family: var(--fuente_secundaria);
+    opacity: 0.30;
+    border-radius: 1%;
+    box-shadow: 0.6rem 0.5rem 0.1rem #000, 0.5rem 0.5rem 0.1rem #000;
+    font-size: 2rem;
+    text-transform: lowercase;
+}
+::placeholder{
+    color: #000000;
+    }
+    .input:focus{
+        outline:none;
+    }
+.output{
+    resize: none;
+    margin-right: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+    width: 30rem;
+    height:50rem;
+    font-family: var(--fuente_contenido);
+    font-size: 2rem;
+    opacity: 0.30;
+    border-radius: 1%;
+    box-shadow: 0.6rem 0.5rem 0.1rem #000, 0.5rem 0.5rem 0.1rem #000;
+    color: #000;
+    background-image:url(/assets/detective_2.png);
+    background-repeat: no-repeat;
+    background-size: 25rem 50rem;
+    background-position: center;
+}
+.output:focus{
+    outline: none;
+}
+
+.presentacion_titulo{
+    color: #fff;
+    font-family: var(--fuente_primaria);
+    font-size: 4.5rem;
+    margin-left: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    text-shadow: 0.6rem 0.5rem 0.25rem #000, 0.5rem 0.5rem 0.5rem #000;
+    letter-spacing: 0.5rem;
+}
+
+.descripcion{
+    color: #fff;
+    font-family: var(--fuente_secundaria);
+    font-size: 1rem;
+    margin-left: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+    text-shadow: 0.6rem 0.5rem 0.25rem #000, 0.5rem 0.5rem 0.5rem #000;
+    letter-spacing: 0.20rem;
+}
+
+.informacion{
+    color: #ffffff70;
+    font-family: var(--fuente_secundaria);
+    font-size: 0.75rem;
+    margin-left: 2.5rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.6rem;
+    text-shadow: 0.6rem 0.5rem 0.25rem #000, 0.5rem 0.5rem 0.5rem #000;
+    letter-spacing: 0.10rem;
+    text-transform: lowercase;
+}
+
+.informacion::before{
+    content:url(/assets/Group.png);
+    margin: 0.5rem;
+}
+
+.botones_1{
+    display: flex;
+    margin-left: 2.5rem;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.btn_encriptar{
+    width:20.5rem;
+    height:4.2rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff30;
+    color:#ffffff;
+    border: 0.2rem solid;
+    font-family: var(--fuente_secundaria);
+    font-size: 1rem;
+    text-transform:uppercase;
+    letter-spacing: 0.20rem;
+    margin-left: 2.5rem;
+}
+
+.btn_desencriptar{
+    width:20.5rem;
+    height:4.2rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff30;
+    color:#fff;
+    border: 0.2rem solid;
+    font-family: var(--fuente_secundaria);
+    font-size: 1rem;
+    text-transform:uppercase;
+    letter-spacing: 0.20rem;
+    margin-right: 2.5rem;
+}
+
+.btn_encriptar:hover, .btn_copy:hover{
+    background-color: #00000065;
+}
+
+.btn_desencriptar:hover{
+    background-color: #00000065;
+}
+
+.boton_copy{
+    display: flex;
+    justify-content: center;
+}
+
+.btn_copy{
+    align-items: center;
+    width:20.5rem;
+    height:4.2rem;
+    border-radius: 0.5rem;
+    background:none;
+    color:#ffffff;
+    background-color:#ffffff30;
+    border: 0.2rem solid;
+    font-family: var(--fuente_secundaria);
+    font-size: 1rem;
+    text-transform:uppercase;
+    letter-spacing: 0.20rem;
+    margin-right: 2.5rem;
+}
+
+.Presentacion_enlaces{
+    color: #fff;
+    font-family: var(--fuente_secundaria);
+    font-size: 0.75rem;
+    text-align: center;
+    letter-spacing: 0.20rem;
+    text-transform: uppercase;
+    margin-top: 0rem;
+}
+
+.enlaces{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40rem;
+    margin-right: 40rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    align-items: center;
+}
+
+.linkedin_logo{
+    width: 8rem;
+    height: 2rem;
+}
+
+.github_logo{
+    width: 4rem;
+    height: 4rem;
+}
+
+.footer_txt{
+    font-size: 1.5rem;
+}
+
+@media(max-width:1250px){
+
+main{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-left: 0%;
+    margin-bottom: 1%;
+}
+
+.presentacion_titulo{
+    justify-content: center;
+    margin-right: 0%;
+    margin-left: 3%;
+    margin-top: 0;
+    align-items: center;
+}
+
+.descripcion{
+    margin-left: 20%;
+    margin-bottom: 2.5%;
+}
+
+.input{
+    width: 100%;
+    height: 25%;
+    margin-left: 0%;
+    margin-right: 0%;
+
+}
+
+.botones_1{
+    margin-left: 0%;
+    margin-right: 0%;
+    gap:10%;
+    padding: 1%;
+}
+
+.output{
+    width: 100%;
+    height: 25%;
+    background-size: 30% 120%;
+    background-position: top;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+}
+
+.boton_copy{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 5%;
+    margin-top: 0%;
+    gap:10%;
+    padding: 1%;
+}
+.enlaces{
+    margin-left: 30%;
+    margin-right:35%;
+    padding: auto;
+}
+
+}
+
+@media(max-width:800px){
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        margin-left: 19%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        width: 10%;
+    }
+    
+    .presentacion_titulo{
+        justify-content: center;
+        font-size: 200%;
+        margin-right: 3%;
+        margin-left: 33%;
+        margin-top: 0;
+        align-items: center;
+    }
+    
+    .descripcion{
+        margin-left: 34%;
+        margin-bottom: 2.5%;
+        font-size: 80%;
+    }
+    
+    .input{
+        width: 54%;
+        height: 50%;
+        margin-left: 33%;
+        margin-right: 0%;
+    
+    }
+
+    .informacion{
+        margin-left: 32%;
+    }
+    
+    .botones_1{
+        margin-left: 25%;
+        margin-right: 5%;
+        margin-bottom: 2%;
+        gap:10%;
+        padding: 2%;
+    }
+    
+    .output{
+        width: 92%;
+        height: 80%;
+        background-size: 30% 120%;
+        background-position: top;
+        margin-left: 21%;
+        margin-right: 0%;
+        margin-top: 0%;
+        font-size: 150%;
+    }
+    
+    .boton_copy{
+        margin-left: 40%;
+        margin-right: 0%;
+        margin-bottom: 5%;
+        margin-top: 0%;
+        gap:10%;
+        padding: 1%;
+    }
+
+    .Presentacion_enlaces{
+        margin-left: 33%;
+    }
+
+
+    .enlaces{
+        margin-left: 0%;
+        margin-right:70%;
+        margin-bottom: 0%;
+        padding: 1%;
+        gap:100%
+    }
+
+    }
+    
