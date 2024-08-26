@@ -48,9 +48,9 @@ Para la realización de éste proyecto se han utlizado las siguientes herramient
 ## Agradecimientos y créditos 
 
 Con total agradecimiento a mis tutores: 
+Por brindarnos su tiempo, su atención, y hacer posible ésta formación en progreso. ¡Muchas gracias!
 - [Oracle](https://www.oracle.com/ar/education/oracle-next-education/)
 - [Alura Latam](https://app.aluracursos.com/form-one/registro/latam-general)
-Por brindarnos su tiempo, su atención, y hacer posible ésta formación en progreso. ¡Muchas gracias!
 
 ## Autor
 Paul Montes
